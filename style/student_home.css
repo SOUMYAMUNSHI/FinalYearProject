@@ -110,6 +110,7 @@ body {
 
 .view {
     width: 80%;
+    overflow: auto;
 }
 
 .footer {
@@ -126,4 +127,118 @@ body {
     height: 90%;
     margin: 0px;
     color: #e85b48;
+}
+
+/*dashboard-content style*/
+
+.dashboard-content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 146, 202, 0.8);
+    margin: 10px;
+    border-radius: 2px;
+    border: 1px solid black
+}
+
+.dashboard-content>p {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.book-iocn {
+    display: inline;
+}
+
+.exam-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-iocn {
+    font-size: 50px;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.numbers {
+    font-size: 40px;
+    margin: 0px;
+    margin-right: 20px;
+}
+
+
+/*Exam list style*/
+
+.exam-list {
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+.list {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    height: 150px;
+    border-radius: 5px;
+    border: 1px solid #0092ca;
+}
+
+.class-list_intro {
+    background-color: #0092ca;
+    padding: 5px;
+    color: white;
+    margin-top: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.list-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+.list-heading>p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.list-heading>p:nth-child(1) {
+    margin-left: 10px;
+}
+
+.list-heading>p:nth-child(3) {
+    margin-right: 10px;
+}
+
+.list-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+.list-content>p {
+    margin: 0;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.list-content>p:nth-child(1) {
+    margin-left: 10px;
+}
+
+.list-content>p:nth-child(3) {
+    margin-right: 10px;
+}
+
+.start-exam_button {
+    width: 50px;
+    height: 25px;
+    background-color: #f38181;
+    border: 0px;
+    color: white;
+    border-radius: 2px;
+    margin-top: 20px;
+    cursor: pointer;
 }
