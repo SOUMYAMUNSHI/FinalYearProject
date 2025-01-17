@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Adding style-->
+    <link rel="stylesheet" href="./style/index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="./script/JQuery/jquery-3.7.1.js"></script> <!--Adding jquery-->
+
+    <!--Icon SDN start-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Above is Bootsrap icon CDN-->
+
+    <!--Icon SDN end-->
+
+    <!--Animation Library start-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--Animation Library end-->
+
+    <title>Home Page</title>
+</head>
+
+<body id="body">
+    <nav class="nav-bar">
+        <a class="button" id="home">Home</a>
+        <a class="button" id="sign_up">Sing Up</a>
+        <a class="button" id="about-us">About us</a>
+        <a class="button" id="student-login">Student Login</a>
+        <a class="button" id="teacher-login">Teacher Login</a>
+    </nav>
+
+    <div class="hero">
+        <div class="intro">
+            <div class="intro-container">
+                <div class="animate__animated animate__fadeInDownBig animation_one">Welcome to the Question Bank!</div>
+            </div>
+
+            <div class="animate__animated animate__fadeIn animation_two">Learn Better, Prepare Smarter</div>
+            <div class="text animate__animated animate__fadeIn animation_three">A vast collection of subject-specific
+                questions.</div>
+            <div class="text animate__animated animate__fadeIn animation_three">Previous years' exam papers for better
+                practice.</div>
+        </div>
+
+        <div class="owner">
+            <div class="owner-info">
+                <div class="owner-image_div animate__animated animate__fadeInLeftBig"><img class="owner-image"
+                        src="./static/src/img/dev2.jpg" alt="owner-img"></div>
+                <p class="owner-intro animate__animated animate__fadeInRightBig">Kazi Sir Website owner, a dedicated
+                    teacher, managing a comprehensive question bank with various
+                    subjects and past year questions for students</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="sign_up"> <!--Sign Up div-->
+        <h2 class="sign_up-heading">Let's start from here:</h2>
+        <span class="sign_up-button" id="sign_up-button">
+            <i class="bi bi-person-fill-add"></i>
+            <p class="sign_up-paragraph">Sign Up</p>
+        </span>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="developer-div">
+            <div class="dev dev-1"><img class="dev-image" src="./static/src/img/dev2.jpg" alt="dev-image">
+                <p>Priyatosh Sarkar</p>
+                <p>Designed and developed both front-end and back-end of websites</p>
+            </div>
+            <div class="dev dev-1"><img class="dev-image" src="./static/src/img/dev2.jpg" alt="dev-image">
+                <p>Priyatosh Sarkar</p>
+                <p>Designed and developed both front-end and back-end of websites</p>
+            </div>
+            <div class="dev dev-1"><img class="dev-image" src="./static/src/img/dev2.jpg" alt="dev-image">
+                <p>Priyatosh Sarkar</p>
+                <p>Designed and developed both front-end and back-end of websites</p>
+            </div>
+            <div class="dev dev-1"><img class="dev-image" src="./static/src/img/dev2.jpg" alt="dev-image">
+                <p>Priyatosh Sarkar</p>
+                <p>Designed and developed both front-end and back-end of websites</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--Pop-up login-->
+
+    <!--Student Login-->
+    <div id="login_container-student" class="login hidden">
+        <!--login form will load here-->
+        <div class="login-container" class="login-container">
+            <div id="login_close-student" class="login_close"><i class="bi bi-x"></i></div>
+            <div class="login-div">
+                <h2 class="login-intro">Student Login Here</h2>
+
+                <form class="login-form" action="./php/login.php" method="post">
+                    <input class="username" type="text" name="username" placeholder="Username" required>
+                    <input class="password" type="password" name="password" placeholder="Password" required>
+                    <input class="submit" type="submit" name="submit">
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--Teacher Login-->
+    <div id="login_container-teacher" class="login hidden">
+        <!--login form will load here-->
+        <div class="login-container" class="login-container">
+            <div id="login_close-teacher" class="login_close"><i class="bi bi-x"></i></div>
+            <div class="login-div">
+                <h2 class="login-intro">Teacher Login Here</h2>
+
+                <form class="login-form" action="./php/login.php" method="post">
+                    <input class="username" type="text" name="username" placeholder="Username" required>
+                    <input class="password" type="password" name="password" placeholder="Password" required>
+                    <input class="submit" type="submit" name="submit">
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--pop-up sign up options-->
+
+    <div class="sign_up-options" id="sign_up-options" style="display: none;">
+        <div class="option_container" id="option_container">
+            <div class="option_close" id="option_close"> <!--Close the option pop up-->
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="teacher_option">
+                <span class="teacher_button">
+                    <i class="bi bi-person-video3"></i>
+                    <p>As a Teacher</p>
+                </span>
+            </div>
+
+            <div class="student_option">
+                <span class="student_button">
+                    <i class="bi bi-person-workspace"></i>
+                    <p>As a Student</p>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("about-us").addEventListener("click", () => {
+            const container = document.querySelector(".footer");
+            container.scrollIntoView({ behavior: "smooth" }); //scroll to footer
+        });
+        document.getElementById("home").addEventListener("click", () => {
+            const container = document.querySelector(".hero");
+            container.scrollIntoView({ behavior: "smooth" }); //scroll to footer
+        });
+
+        document.getElementById("student-login").addEventListener("click", () => { //to open student login
+            document.getElementById("login_container-student").classList.remove("hidden");
+            document.getElementById("body").classList.add("disable-scrollbar");
+
+        });
+
+        document.getElementById("teacher-login").addEventListener("click", () => { //to open teaher login
+            document.getElementById("login_container-teacher").classList.remove("hidden");
+            document.getElementById("body").classList.add("disable-scrollbar");
+
+        });
+
+        document.getElementById("login_close-student").addEventListener("click", () => { //to close the login form
+
+            const teacher = document.getElementById("login_container-teacher");
+            document.getElementById("login_container-student").classList.add("hidden");
+            document.getElementById("body").classList.remove("disable-scrollbar");
+
+
+        });
+
+        document.getElementById("login_close-teacher").addEventListener("click", () => { //to close the login form
+
+            const teacher = document.getElementById("login_container-teacher");
+            document.getElementById("login_container-teacher").classList.add("hidden");
+            document.getElementById("body").classList.remove("disable-scrollbar");
+
+        });
+
+        document.getElementById("sign_up").addEventListener("click", () => {
+            const container = document.querySelector(".sign_up");
+            container.scrollIntoView({ behavior: "smooth" }); //scroll to footer
+        });
+
+        //close the pop up
+        document.getElementById("option_close").addEventListener("click", () => {
+            $(".sign_up-options").css({ display: "none" });
+        });
+
+        //open the pop up
+        document.getElementById("sign_up-button").addEventListener("click", () => {
+            $(".sign_up-options").removeAttr("style");
+        });
+
+    </script>
+
+    <!--This scripts for animation-->
+    <script src="./script/Animation/three.min.js"></script>
+    <script src="./script/Animation/vanta.waves.min.js"></script>
+    <script>
+        VANTA.WAVES({
+            el: ".footer",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00
+        })
+    </script>
+
+</body>
+
+</html>
