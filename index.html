@@ -144,14 +144,14 @@
                 <i class="bi bi-x"></i>
             </div>
             <div class="teacher_option">
-                <span class="teacher_button">
+                <span class="teacher_button" id="teacher_signup">
                     <i class="bi bi-person-video3"></i>
                     <p>As a Teacher</p>
                 </span>
             </div>
 
             <div class="student_option">
-                <span class="student_button">
+                <span class="student_button" id="student_signup">
                     <i class="bi bi-person-workspace"></i>
                     <p>As a Student</p>
                 </span>
@@ -212,8 +212,10 @@
         document.getElementById("sign_up-button").addEventListener("click", () => {
             $(".sign_up-options").removeAttr("style");
         });
-
     </script>
+
+    <script src="./script/script/redirect.js"></script> <!--To redirect the sign up page-->
+
 
     <!--This scripts for animation-->
     <script src="./script/Animation/three.min.js"></script>
