@@ -15,7 +15,7 @@
             <p>10:00 am</p>
             <p>40 min</p>
         </div>
-        <button class="start-exam_button">Start</button>
+        <button class="start-exam_button" onclick="start_exam()">Start</button>
     </div>
 
     <div class="list">
@@ -74,3 +74,9 @@
 
 
 </div>
+
+<script>
+    function start_exam() {
+        window.open("http://127.0.0.1:5500/student/components/online_exam.html", "_blank");
+    }
+</script>

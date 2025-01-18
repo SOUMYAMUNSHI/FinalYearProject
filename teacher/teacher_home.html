@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Include style-->
+    <link rel="stylesheet" href="../style/teacher_home.css">
+
+    <!--Bootstrap icon CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <title>Teacher</title>
+</head>
+
+<body>
+    <div class="main-div">
+        <header class="header">
+            <p class="description">Secure Exam</p>
+            <button class="logout-button">Log out</button>
+        </header>
+        <div class="main-body">
+            <div id="navigation" class="navigation">
+                <div class="image-div">
+                    <img class="user-image" src="../static/src/img/dev2.jpg" alt="user-img">
+                    <p class="student-name">Teacher Name</p>
+                </div>
+                <div class="navigtion-option">
+                    <p id="dashboard" class="dashboard"><i class="bi bi-speedometer"></i> Dshboard</p>
+                    <p id="Exam" class="Exam"><i class="bi bi-pencil-square"></i> Exam</p>
+                    <p id="Marks" class="Question"><i class="bi bi-trophy"></i> Question</p>
+                </div>
+            </div>
+
+            <div class="view">
+                <!--Content will load here-->
+            </div>
+
+        </div>
+        <footer class="footer">
+            <p class="descriptions">This is a secure exam application, it's required your device camera access. Please
+                use Laptop or Desktop To use this application.</p>
+        </footer>
+    </div>
+
+    <!--Including jquery-->
+    <script src="../script/JQuery/jquery-3.7.1.js"></script>
+
+    <script>
+        $("#show-button").click(function () {
+            $("#navigation").animate({ width: "15%" });
+            $(".view").css({ width: "85%" });
+        });
+
+        $("#dashboard").click(function () {
+            $(".view").load("./components/teacher_dashboard.html");
+        });
+
+        $("#Exam").click(function () {
+            $(".view").load("./components/exam_list.html");
+        });
+
+        $("#Marks").click(function () {
+            $(".view").load("./components/view_result.html");
+        });
+    </script>
+</body>
+
+</html>
