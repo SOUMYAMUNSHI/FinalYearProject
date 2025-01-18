@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Maven+Pro:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Maven+Pro:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Maven+Pro:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Maven+Pro:wght@400..900&family=Nanum+Gothic&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/*Font for Animation*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap");
+
+body {
+  /* font-family: Arial, sans-serif; */
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.nav-bar {
+  background-color: #0092ca;
+  padding: 20px;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+
+  /* border-bottom: 2px solid white; */
+  margin-right: 20px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro-container {
+  padding: 10px;
+}
+
+/*Animation div design start from here*/
+
+.animation_one {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 80px;
+  position: relative;
+  z-index: -100;
+
+  color: #400082;
+}
+
+.animation_two {
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #1d1716;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.animation_two {
+  animation-delay: 1s;
+  animation-duration: 0.1s;
+
+  margin-bottom: 10px;
+  position: relative;
+  z-index: -100;
+}
+
+.text {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: oblique;
+  font-variation-settings: "wdth" 100;
+  position: relative;
+  z-index: -100;
+
+  animation-delay: 1.5s;
+}
+
+/*Animation div design end here*/
+
+.margin {
+  border-right: 1px solid #698474;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* background-color: #233142; */
+  background-color: rgb(0 0 0 / 0.5);
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+}
+
+.login-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 400px;
+  align-items: center;
+  justify-self: center;
+  background-color: #fcfefe;
+  border-radius: 2px;
+  /* border-left: 2px solid #5f6769;
+  border-bottom: 2px solid #5f6769; */
+}
+
+.login-intro {
+  /* align-self: ; */
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0px;
+  margin-top: 30px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+}
+
+.login-form > .username {
+  display: block;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 17rem;
+
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.login-form > .password {
+  display: block;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 17rem;
+
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.submit {
+  margin: 0 auto;
+  padding: 10px;
+  width: 8rem;
+  height: 40px;
+  background-color: #0092ca;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #eeeeee;
+  font-size: 16px;
+
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.login_close {
+  font-size: 50px;
+  color: #e7eaf6;
+
+  margin-left: 500px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #007cb9;
+}
+
+.footer {
+  display: flex;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  z-index: -2;
+}
+
+.hidden {
+  display: none;
+  /*To hide an div*/
+}
+
+.disable-scrollbar {
+  overflow-y: hidden;
+  /*To disable scrollbar*/
+}
+
+/*Developer details div*/
+
+.developer-div {
+  background-color: rgb(255, 255, 255, 0.2);
+  width: 60%;
+  height: 50%;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dev {
+  margin-top: 30px;
+  text-align: center;
+  width: 200px;
+}
+
+.dev > p {
+  font-weight: bold;
+  margin: 0px;
+}
+
+.dev > p:nth-child(3) {
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.dev-image {
+  border-radius: 50%;
+  width: 100px;
+  /* border:2px solid #455d7a; */
+}
+
+.owner {
+  position: relative;
+  z-index: -100;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 100px;
+
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.owner-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.owner-image_div {
+  width: 150px;
+  height: 150px;
+  animation-delay: 0.02s;
+}
+
+.owner-image {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.owner-intro {
+  margin-left: 10px;
+  animation-delay: 0.02s;
+}
+
+/*Sign Up div*/
+
+.sign_up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 20rem;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.sign_up-button {
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #069ce7;
+  width: 100px;
+  height: 40px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+
+  color: white;
+  font-size: 17px;
+
+  cursor: pointer;
+}
+
+.bi {
+  font-size: 20px;
+}
+
+.sign_up-heading {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+
+  font-size: 15px;
+}
+
+/*pop-up login-options*/
+
+.sign_up-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 110%;
+}
+
+.option_container {
+  width: 40%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+
+  background-color: #e7eaf6;
+}
+
+.teacher_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  background-color: #069ce7;
+  border-radius: 2px;
+  gap: 5px;
+  color: white;
+
+  cursor: pointer;
+}
+
+.student_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  background-color: #069ce7;
+  border-radius: 2px;
+  gap: 5px;
+  color: white;
+
+  cursor: pointer;
+}
+
+.teacher_option {
+  display: flex;
+  justify-content: center;
+}
+
+.student_option {
+  display: flex;
+  justify-content: center;
+}
+
+.option_close {
+  display: flex;
+  justify-content: start;
+  align-self: flex-end;
+  position: absolute;
+  top: 0;
+}
+
+.option_close > i {
+  font-size: 30px;
+  cursor: pointer;
+}
+
