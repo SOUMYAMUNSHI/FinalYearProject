@@ -105,10 +105,10 @@
             <div class="login-div">
                 <h2 class="login-intro">Student Login Here</h2>
 
-                <form class="login-form" action="./php/login.php" method="post">
+                <form class="login-form" action="./php/login.php" method="post"> <!--Student login form-->
                     <input class="username" type="text" name="username" placeholder="Username" required>
                     <input class="password" type="password" name="password" placeholder="Password" required>
-                    <input class="submit" type="submit" name="submit">
+                    <input class="submit" type="submit" name="submit" id="student_login"> <!--Temporary id is added for login button-->
                 </form>
 
             </div>
@@ -124,10 +124,10 @@
             <div class="login-div">
                 <h2 class="login-intro">Teacher Login Here</h2>
 
-                <form class="login-form" action="./php/login.php" method="post">
+                <form class="login-form" action="./php/login.php" method="post"> <!--Teacher login form-->
                     <input class="username" type="text" name="username" placeholder="Username" required>
                     <input class="password" type="password" name="password" placeholder="Password" required>
-                    <input class="submit" type="submit" name="submit">
+                    <input class="submit" type="submit" name="submit" id="teacher_login"> <!--Temporary id is added for login button-->
                 </form>
 
             </div>
@@ -215,6 +215,8 @@
     </script>
 
     <script src="./script/script/redirect.js"></script> <!--To redirect the sign up page-->
+    <script src="./script/script/login.js"></script> <!--To redirect to student and teacher page-->
+
 
 
     <!--This scripts for animation-->
