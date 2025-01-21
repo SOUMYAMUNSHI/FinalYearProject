@@ -17,19 +17,25 @@
     <title>Student</title>
 </head>
 
-<body>
+<body id="body">
     <div class="main-div">
         <header class="header">
             <p class="description">Secure Exam</p>
+
+            <div>
+                <p class="warning" id="warning" hidden>Warning: Mouse clicked outside the webpage!</p>
+            </div>
+            <!--To give warning-->
+
+            <div class="timer"> <!--To view reverse timer-->
+                <p id="timer"></p>
+            </div>
         </header>
 
 
 
         <div class="main-body">
             <div id="navigation" class="navigation">
-                <div class="timer"> <!--To view reverse timer-->
-                    <p id="timer"></p>
-                </div>
 
                 <div class="ai_output">
                     <video id="video" class="video" autoplay></video>
@@ -108,7 +114,7 @@
     </div>
 
     <!--Including jquery-->
-    <script src="../script/JQuery/jquery-3.7.1.js"></script>
+    <script src="../../script/JQuery/jquery-3.7.1.js"></script>
 
     <script>
         $("#show-button").click(function () {
@@ -129,6 +135,7 @@
         });
     </script>
 
+    <script src="../../script/script/mouse_movement.js"></script> <!--Mouse movement monitoring-->
     <script src="../../script/script/camera_output.js"></script> <!--Enable camera-->
     <script src="../../script/script/timer.js"></script> <!--To enable timer-->
 
