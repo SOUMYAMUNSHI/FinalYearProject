@@ -307,7 +307,7 @@ body {
   font-size: 15px;
   padding: 10px;
 }
-.timer > p{
+.timer > p {
   margin: 0;
   padding: 10px;
 }
@@ -340,3 +340,30 @@ body {
   top: 0;
   left: 0;
 } */
+
+.result {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  padding: 20px;
+  margin: 50px;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 16px;
+}
+
+.Exam_details {
+  display: flex;
+  justify-content: space-around;
+  font-size: 15px;
+}
+
+.print {
+  color: #393e46;
+  font-size: 20px;
+  cursor: pointer;
+}
