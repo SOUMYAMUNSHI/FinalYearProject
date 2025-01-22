@@ -1,5 +1,5 @@
 <div class="teacher_exam">
-    <div class="add_exam">
+    <div class="add_exam" id="add_exam">
         <p>Add Exam</p>
         <i class="bi bi-plus-lg"></i>
     </div>
@@ -9,3 +9,9 @@
         <i class="bi bi-eye-fill"></i>
     </div>
 </div>
+
+<script>
+    $("#add_exam").click(function () {
+        $(".view").load("./components/add_subject.html");
+    });
+</script>

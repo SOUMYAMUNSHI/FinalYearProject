@@ -411,3 +411,36 @@ body {
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
+
+.add_subject {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  font-size: 20px;
+}
+
+.add_subject > h5 {
+  text-align: center;
+}
+
+.add_subject > label {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.add_subject > input {
+  padding: 8px;
+}
+
+.add_subject-button {
+  align-self: center;
+  margin-top: 20px;
+  background-color: #118a7e;
+  border: none;
+  padding: 10px;
+  border-radius: 2px;
+  color: white;
+
+  cursor: pointer;
+}
